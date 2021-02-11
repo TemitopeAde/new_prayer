@@ -1,0 +1,68 @@
+{% extends 'Prayer/base.html' %}
+
+{% block content %}
+    <div class="page-1-container">
+        <div class="prayers-wrappers">
+            
+           <div class="prayers-wrapper-flex">
+               <div class="prayers-wrapper-1">
+                    <div class="prayers-title">
+                        <h2>Curious Visitor</h2>
+                        <p class="amount">$25</p>
+                    </div>
+                    <div class="prayers-details">
+                        <p>A one time fee for 15 minutes.</p> 
+                    </div>
+                    <div class="prayers-price">
+                        <form action="." method="post">
+                            {% csrf_token %}
+                            <input type="hidden" value="25" name="price">
+                            <button type="submit" class="btn btn-success">Continue</button>
+                            <!--<a href="{% url 'source:payment' %}" type="submit">Continue($25)</a>-->
+                        </form>
+                    </div> 
+               </div>
+               
+               <div class="prayers-wrapper-1">
+                    <div class="prayers-title">
+                        <h4 id="popular">Popular</h4>
+                        <h2>Conscious Member</h2>
+                        <p class="amount">$35</p>
+                    </div>
+                    <div class="prayers-details">
+                        <p>A scheduled monthly talk with your prayer partner for 30 minutes and a monthly e-mail.</p> 
+                    </div>
+                    <div class="prayers-price">
+                       <form action="." method="post">
+                            {% csrf_token %}
+                            <input type="hidden" value="35" name="price">
+                            <button type="submit" class="btn btn-success">Continue</button>
+                            <!--<a href="{% url 'source:payment' %}" type="submit">Continue($25)</a>-->
+                        </form>
+                    </div>  
+                </div>
+
+                <div class="prayers-wrapper-1">
+                    <div class="prayers-title">
+                        <h2>Connected Member</h2>
+                        <p class="amount">$25</p>
+                    </div>
+                    <div class="prayers-details">
+                        <p>A scheduled Monthly talk with your prayer partner for 20 minutes.</p> 
+                    </div>
+                    <div class="prayers-price">
+                        <form action="." method="post">
+                            {% csrf_token %}
+                            <input type="hidden" value="25" name="price">
+                            <button type="submit" class="btn btn-success">Continue</button>
+                            <!--<a href="{% url 'source:payment' %}" type="submit">Continue($25)</a>-->
+                        </form>
+                    </div> 
+               </div>
+           </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

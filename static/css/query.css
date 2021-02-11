@@ -1,0 +1,86 @@
+@media only screen and (max-width:768px) {
+    .prayers-wrapper {
+        width: 85vw;
+    }
+    .page-1-container h1 {
+        font-size: 1.5rem;
+    }
+    .prayers-wrapper-flex {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .prayers-wrapper-1 {
+       margin-bottom: 3rem;
+    }
+    #page-3-h2 {
+    font-size: 2rem;
+    }
+    .spiritual-support {
+    font-size: 1.2rem;
+    }
+    .prayers-wrapper {
+        margin-bottom: 1rem;
+    }
+    .prayers-wrapper-1 {
+        margin-right: 0rem;
+    }
+}
+
+
+@media only screen and (max-width:548px) {
+    
+    .page-1-container h1 {
+        font-size: 1.5rem;
+    }
+    .prayers-title h2 {
+        font-size: 1.4rem;
+    }
+    img {
+    object-fit: contain;
+}
+.prayers-wrappers {
+    padding: .2rem;
+}
+.page-1-begins a {
+    padding: .8rem 2.6rem;
+    font-size: 1.2rem;
+}
+
+}
+
+@media only screen and (max-width:425px) {
+    page-1-begins a {
+        padding: .8rem 1.4rem;
+        font-size: .8em;
+    }
+    .btn {
+        padding: .4rem 2rem;
+    }
+    .prayers-wrapper {
+        width: 90vw;
+    }
+    .prayers-details p {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width:375px) {
+    .page-1-begins a {
+        font-size: .6rem;
+    }
+    .page-1-container h1 {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media only screen and (max-width:320px) {
+    .prayers-title h2 {
+        font-size: 1rem;
+    }
+    .prayers-details p {
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,16 @@
+{% extends 'Prayer/base.html' %}
+
+{% block content %}
+    <div class="page-1-container">
+        <div class="prayers-wrapper">
+            <h1>Let's Know more about you</h1>
+            <form action="." method="POST">
+                {% csrf_token %}
+                {{ form.name }}
+                {{ form.location }}
+                {{ form.age }}
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'Prayer/base.html' %}
+
+{% block content %}
+    <div class="page-1-container">
+        <div class="prayers-wrappers">
+            <div class="calendar">
+                <h2 id="page-3-h2">When would you like to partner-up?</h2>
+                <div class="form">
+                    <form action="." method="POST">
+                        {% csrf_token %}
+                        {{ form.date }}
+                        {{ form.email }}
+                        <button class="btn btn-success" style="margin-top: 1.5rem;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

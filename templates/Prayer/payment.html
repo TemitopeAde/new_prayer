@@ -1,0 +1,47 @@
+{% extends 'Prayer/base.html' %}
+
+{% block content %}
+    <div class="page-1-container">
+        <div class="prayers-wrapper">
+
+            <div id="paypal-button-container"></div>
+
+            <!--<form action="." method="POST" name="payment-form">-->
+                <!--{% csrf_token %}-->
+                <!--{{ form.email }}-->
+                <!--{{ form.address }}-->
+                <!--{{ form.phone_number }}-->
+                <!--<button type="submit" class="btn btn-success mb-3" id="submit-form">Submit</button>-->
+            <!--</form>-->
+        </div>
+    </div>
+
+
+
+<script
+    src="https://www.paypal.com/sdk/js?client-id=Aa05g8nkhCplbLD5Y48z6xd4aWh2GQChjjhNB9N6L3vkM2wOAGjeagN8Yof2gyQ74ndWh3xpct9aeNnP"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+</script>
+
+<script>
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      // This function sets up the details of the transaction, including the amount and line item details.
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '{{ price }}'
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      // This function captures the funds from the transaction.
+      return actions.order.capture().then(function(details) {
+        // This function shows a transaction success message to your buyer.
+        alert('Transaction completed');
+      });
+    }
+  }).render('#paypal-button-container');
+  //This function displays Smart Payment Buttons on your web page.
+</script>
+{% endblock %}

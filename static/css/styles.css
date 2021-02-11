@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-size: 18px;
+    text-align: center;
+	font-weight: 400;
+    font-family: 'Raleway', sans-serif !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background: navy ! important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 , h5, h6, p {
+    color: navy ! important;
+}
+
+
+ul {
+    list-style: none
+}
+
+img {
+	width: 100%;
+	object-fit: scale-down;
+}
+
+header {
+    float: right;
+    margin-right: 2rem;
+}
+
+.page-1-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    border-radius: 15px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.page-1-container h1{
+    margin-bottom: 3rem;
+    font-weight: 500;
+    color: navy;
+    text-align: center;
+}
+
+.page-1-begins a {
+    display: inline-block;
+    color: white;
+    box-shadow: 0px 0px 7px 0px rgb(2 0 16);
+    border-radius: 25px;
+    margin-right: 1rem;
+    padding: 1rem 3.6rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.page-1-begins {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #010531;
+    border: none;
+    transition: .7s;
+    padding: .9rem 1.3rem;
+    box-shadow: 0px 0px 7px 0px rgb(2 0 16);
+}
+
+.btn:hover {
+    background-color: #000108;
+}
+
+.prayers-wrapper {
+    box-shadow: 0px 0px 7px 0px rgb(2 0 16);
+    padding: 10rem 5rem;
+    background: #ffffff;
+    width: 50vw;
+    border-radius: 45px;
+    margin-bottom: 4rem;
+}
+.spiritual-support {
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+#page-3-h2 {
+    color: white;
+    font-size: 2.6rem;
+}
+.prayers-wrapper-flex {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    /* padding: 0 3rem; */
+}
+
+.prayers-wrappers {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 5rem;
+}
+
+.prayers-wrapper-1 {
+    margin-right: .001rem;
+    background: #ffffff;
+    flex-basis: 32%;
+    transition: .6s;
+    border-radius: 30px;
+}
+
+#popular {
+    text-align: center;
+    border: 2.3px solid navy;
+    padding: .2rem;
+    border-radius: 20px;
+}
+
+
+
+.prayers-wrapper-1:hover {
+    transform: translateY(8px)
+}
+
+.prayers-title {
+    border-bottom: 1px solid white;
+    padding: 1rem
+}
+
+.prayers-title h2 {
+    text-align: center;
+}
+
+.amount {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.prayers-details {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    padding:  5rem 1rem;
+    text-align: center;
+    height: 290px;
+}
+
+.prayers-details p {
+    font-size: 1.3rem
+}
+
+.prayers-price {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+.prayers-price a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    margin-bottom: 1px;
+}
+
+.logo img {
+    width: 200px;
+    height: 130px;
+}
+
+.prayers-price a:hover {
+    color: white
+}
+
+.prayers-wrappers #page-3-h2 {
+    color: #0a0825;
+}
+
+.scheduled {
+    width: 60vw;
+    padding: 2rem 0;
+    margin: 0 auto;
+    background: white;
+    color: #0a0825;
+    line-height: 50px;
+}
+
+
+
+.index-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-container img {
+    height: 90vh;
+}
+
+
+
+
